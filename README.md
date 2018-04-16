@@ -19,6 +19,6 @@ docker build -t ros-morse .
 to build the Docker image.
 
 ## Usage
-To run the built image with xhost opened to the contiainer (so it can run GUI applications like Morse), use `run-ros-morse.sh`. The file can be edited to mount the volumes to different directories.
+Use `run-ros-morse.sh` to start the container with xhost opened to it (so it can run GUI applications like Morse). The file can be edited to mount the volumes to different directories.
 
 To open an additional bash prompt inside the container (for running multiple nodes in different terminals for example), use `docker exec -it ros-morse /bin/bash`.
