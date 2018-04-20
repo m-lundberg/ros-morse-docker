@@ -1,4 +1,4 @@
-FROM ros:kinetic-robot
+FROM osrf/ros:kinetic-desktop-full
 MAINTAINER Martin Lundberg
 
 RUN apt-get update && apt-get install -y \
@@ -25,9 +25,7 @@ RUN apt-get update && apt-get install -y \
        qtdeclarative5-dev \
        qtdeclarative5-models-plugin \
        ros-kinetic-geographic-msgs \
-       ros-kinetic-ompl \
-       ros-kinetic-rqt \
-       ros-kinetic-rviz
+       ros-kinetic-ompl
 
 RUN pip3 install -U pip rospkg catkin-pkg
 
